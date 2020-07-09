@@ -31,7 +31,7 @@ function handletranslate(data: string[], extra: Options): Promise<any> {
     .then(res => {
       const query = {
         anno: 3,
-        client: "webapp",
+        client: extra.client || "webapp",
         format: extra.format,
         v: 1.0,
         key: null,
